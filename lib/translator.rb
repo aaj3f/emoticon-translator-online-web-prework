@@ -1,6 +1,7 @@
 require 'yaml'
 require 'pry'
 
+<<<<<<< HEAD
 
 def load_library(file_path)
   emoticons = {"get_emoticon" => {}, "get_meaning" => {}}
@@ -36,4 +37,20 @@ def get_english_meaning(file_path, jp_emo)
       return "Sorry, that emoticon was not found"
     end
   end
+=======
+emoticons = nil
+def load_library(file_path)
+  emoticons = YAML.load_file(file_path)
+  emoticons
+end
+
+binding.pry
+
+def get_japanese_emoticon
+  # code goes here
+end
+
+def get_english_meaning
+  # code goes here
+>>>>>>> f4580f929e5de765542bb66946f6c1721e1a65b0
 end
